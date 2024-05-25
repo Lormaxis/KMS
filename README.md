@@ -32,11 +32,14 @@
 | Windows Server 2019 Standard          |                                    | N69G4-B89J2-4G8F4-WWYCC-J464C      |
 | Windows Server 2019 Essentials        |                                    | WVDHN-86M7X-466P6-VHXV7-YY726      |
 
-Server
-kms.srv.crsoo.com
-kms.digiboy.ir
-kms.03k.org
-hq1.chinancce.com
-kms.shuax.com
-kms.lotro.cc
-kms789.com
+
+| KMS Server               |
+|--------------------------|
+| kms.srv.crsoo.com        |
+| kms.digiboy.ir           |
+| kms.03k.org              |
+| hq1.chinancce.com        |
+| kms.shuax.com            |
+| kms.lotro.cc             |
+| kms789.com               |
+
