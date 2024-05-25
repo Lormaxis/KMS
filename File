@@ -1,3 +1,43 @@
-slmgr.vbs <key>
-slmgr /skms <server>
+@echo off
+echo Введіть версію Windows (наприклад, "Windows 10 Pro"):
+set /p version=
+
+if "%version%"=="Windows 10 Home" set key=TX9XD-98N7V-6WMQ6-BX7FG-H8Q99
+if "%version%"=="Windows 10 Home N" set key=3KHY7-WNT83-DGQKR-F7HPR-844BM
+if "%version%"=="Windows 10 Home Single Language" set key=7HNRX-D7KGG-3K4RQ-4WPJ4-YTDFH
+if "%version%"=="Windows 10 Pro" set key=W269N-WFGWX-YVC9B-4J6C9-T83GX
+if "%version%"=="Windows 10 Pro N" set key=MH37W-N47XK-V7XM9-C7227-GCQG9
+if "%version%"=="Windows 10 Pro for Workstations" set key=NRG8B-VKK3Q-CXVCJ-9G2XF-6Q84J
+if "%version%"=="Windows 10 Pro N for Workstations" set key=9FNHH-K3HBT-3W4TD-6383H-6XYWF
+if "%version%"=="Windows 10 S" set key=3NF4D-GF9GY-63VKH-QRC3V-7QW8P
+if "%version%"=="Windows 10 Education" set key=NW6C2-QMPVW-D7KKK-3GKT6-VCFB2
+if "%version%"=="Windows 10 Education N" set key=2WH4N-8QGBV-H22JP-CT43Q-MDWWJ
+if "%version%"=="Windows 10 Pro Education" set key=6TP4R-GNPTD-KYYHQ-7B7DP-J447Y
+if "%version%"=="Windows 10 Pro Education N" set key=YVWGF-BXNMC-HTQYQ-CPQ99-66QFC
+if "%version%"=="Windows 10 Enterprise" set key=NPPR9-FWDCX-D2C8J-H872K-2YT43
+if "%version%"=="Windows 10 Enterprise G" set key=YYVX9-NTFWV-6MDM3-9PT4T-4M68B
+if "%version%"=="Windows 10 Enterprise G N" set key=44RPN-FTY23-9VTTB-MP9BX-T84FV
+if "%version%"=="Windows 10 Enterprise N" set key=DPH2V-TTNVB-4X9Q3-TJR4H-KHJW4
+if "%version%"=="Windows 10 Enterprise S" set key=FWN7H-PF93Q-4GGP8-M8RF3-MDWWW
+if "%version%"=="Windows 10 Enterprise 2015 LTSB" set key=WNMTR-4C88C-JK8YV-HQ7T2-76DF9
+if "%version%"=="Windows 10 Enterprise 2015 LTSB N" set key=2F77B-TNFGY-69QQF-B8YKP-D69TJ
+if "%version%"=="Windows 10 Enterprise LTSB 2016" set key=DCPHK-NFMTC-H88MJ-PFHPY-QJ4BJ
+if "%version%"=="Windows 10 Enterprise N LTSB 2016" set key=QFFDN-GRT3P-VKWWX-X7T3R-8B639
+if "%version%"=="Windows 10 Enterprise LTSC 2021" set key=M7XTQ-FN8P6-TTKYV-9D4CC-J462D
+if "%version%"=="Windows 10 Enterprise N LTSC 2021" set key=92NFX-8DJQP-P6BBQ-THF9C-7CG2H
+if "%version%"=="Windows Server 2016 Datacenter" set key=CB7KF-BWN84-R7R2Y-793K2-8XDDG
+if "%version%"=="Windows Server 2016 Standard" set key=WC2BQ-8NRM3-FDDYY-2BFGV-KHKQY
+if "%version%"=="Windows Server 2016 Essentials" set key=JCKRF-N37P4-C2D82-9YXRT-4M63B
+if "%version%"=="Windows Server 2019 Datacenter" set key=WMDGN-G9PQG-XVVXX-R3X43-63DFG
+if "%version%"=="Windows Server 2019 Standard" set key=N69G4-B89J2-4G8F4-WWYCC-J464C
+if "%version%"=="Windows Server 2019 Essentials" set key=WVDHN-86M7X-466P6-VHXV7-YY726
+
+echo Введіть KMS сервер (наприклад, "kms.srv.crsoo.com"):
+set /p server=
+
+slmgr.vbs -ipk %key%
+slmgr /skms %server%
 slmgr /ato
+
+echo Активація завершена.
+pause
