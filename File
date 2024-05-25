@@ -1,0 +1,3 @@
+slmgr.vbs <key>
+slmgr /skms <server>
+slmgr /ato
